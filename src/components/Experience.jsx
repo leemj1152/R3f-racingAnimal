@@ -1,5 +1,7 @@
 import { OrbitControls, useHelper, PerspectiveCamera } from "@react-three/drei";
 import { Shiba } from "./obj/ShibaInu";
+import { Bull } from "./obj/Bull";
+import { Cow } from "./obj/Cow";
 import { useRef } from "react";
 import { Tree } from "./obj/Tree";
 import { useFrame } from "@react-three/fiber";
@@ -45,8 +47,10 @@ export const Experience = () => {
     <ambientLight intensity={4}/>
     <PerspectiveCamera ref={camera} near={10} far={1000} position={[-0, 10, -40]} makeDefault></PerspectiveCamera>
       <OrbitControls />
-      <Road position={[0, -5, 115]} scale={5}/>
+      <Road position={[0, -5, 113]} scale={5}/>
       <Shiba />
+      <Bull position={[4, 0, 0]} />
+      <Cow position={[8, 0, 0]} />
     </>
   );
 };

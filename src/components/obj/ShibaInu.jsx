@@ -12,9 +12,10 @@ export function Shiba(props) {
   const { actions, names } = useAnimations(animations, group);
 
   useEffect(() => {
-    actions[[names[8]]].reset().fadeIn(0.5).play();
+    actions[[names[9]]].reset().fadeIn(0.5).play();
+    console.log(actions);
     return () => {
-      actions[[names[8]]].fadeOut(0.5);
+      actions[[names[9]]].fadeOut(0.5);
     }
   });
 
