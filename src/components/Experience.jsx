@@ -3,7 +3,7 @@ import { Shiba } from "./obj/ShibaInu";
 import { Bull } from "./obj/Bull";
 import { Cow } from "./obj/Cow";
 import { useRef } from "react";
-import { Tree } from "./obj/Tree";
+import { Deer } from "./obj/Deer";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from 'three'
 import { Road } from "./obj/Road";
@@ -51,6 +51,7 @@ export const Experience = () => {
       <Shiba />
       <Bull position={[4, 0, 0]} />
       <Cow position={[8, 0, 0]} />
+      <Deer position={[12, 0, 0]}/>
     </>
   );
 };
